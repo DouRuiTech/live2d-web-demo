@@ -88,7 +88,7 @@
 
     </head>
 
-    <body onload="sampleApp1();init();">
+    <body onload="sampleApp1()">
 
         <p>
             <button id="btnChange" class="active">Change Model</button>
@@ -116,21 +116,5 @@
         <script src="LAppModel.js"></script>
         <script src="LAppLive2DManager.js"></script>
         <script src="SampleApp1.js"></script>
-        <script type="text/javascript">
-            function init()
-{
-    canvas = document.getElementById("mainCanvas");
-    canvas.width = document.body.clientWidth; //document.width is obsolete
-    canvas.height = document.body.clientHeight; //document.height is obsolete
-    canvasW = canvas.width;
-    canvasH = canvas.height;
-
-    if( canvas.getContext )
-    {
-        setup();
-        setInterval( run , 33 );
-    }
-}
-        </script>>
     </body>
 </html>
